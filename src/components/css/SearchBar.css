@@ -1,0 +1,39 @@
+.searchbarform {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1em;
+    background-color: #e9d8a5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .searchbarinput {
+    flex-grow: 1;
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #e9d8a5;
+  }
+  
+  .searchbarinput::placeholder {
+    color: black;
+  }
+  
+  .submitbtn {
+    background-color: #8b5b37;
+    color: whitesmoke;
+    border: 1px solid #f5f5f5;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitbtn:hover {
+    background-color: #b89065;
+    border-color: #b89065;
+  }

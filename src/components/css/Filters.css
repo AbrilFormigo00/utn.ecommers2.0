@@ -1,0 +1,160 @@
+/* Filters container */
+.filter__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  background-color: #e9d8a5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 1em;
+  max-width: 300px;
+  color: black; /* Set font color to black */
+}
+
+/* Filter header */
+.filter__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Filter label */
+.filter__label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: black; /* Set font color to black */
+}
+
+/* Filter icon */
+.filter__icon {
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+  transition: transform 0.3s;
+}
+
+/* Filter icon rotation for checked state */
+.rotate-min {
+  transform: rotate(-60deg);
+}
+
+.rotate-max {
+  transform: rotate(120deg);
+}
+
+/* Form styles */
+form {
+  width: 100%;
+  margin: 1em 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: black; /* Set font color to black */
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+output {
+  display: block;
+  font-weight: bold;
+  color: black; /* Set font color to black */
+}
+
+/* Filter options */
+.filterscontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0.5em 0;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  color: black; /* Set font color to black */
+}
+
+/* Slider container */
+.slider-container {
+  width: 100%;
+  margin: 1em 0;
+  text-align: center;
+}
+
+/* Slider label */
+.slider-container label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/* Slider input */
+.slider {
+  width: 100%;
+  -webkit-appearance: none; /* Remove default styles for WebKit browsers */
+  appearance: none; /* Remove default styles for other browsers */
+  height: 10px; /* Set the height of the slider */
+  background: #ccc; /* Gray background color */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set initial opacity */
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+
+/* Slider thumb (handle) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styles for WebKit browsers */
+  appearance: none; /* Remove default styles for other browsers */
+  width: 20px; /* Set the width of the thumb */
+  height: 20px; /* Set the height of the thumb */
+  background: #5a2e16; /* Blue color for the thumb */
+  border-radius: 50%; /* Round the thumb */
+  cursor: pointer;
+}
+
+/* Slider value (output) */
+.slider-value {
+  font-weight: bold;
+  margin-top: 0.5em;
+  color: black; /* Blue color for the value */
+}
+
+/* Change the background color of the checkbox */
+input[type="checkbox"] {
+  cursor: pointer;
+  color: black; /* Set font color to black */
+  position: relative; /* Required for positioning pseudo-element */
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #5a2e16;
+  border-radius: 4px;
+  margin-right: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  color: black;
+}
